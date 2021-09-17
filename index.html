@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recept</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+
+<header>
+   <a class="a-header" href="index.html"><h1>Recept</h1></a>
+</header>
+
+
+<nav>
+
+    <button onClick='showhide1()'>Dessert</button>
+
+    <div id="hide1" hidden>
+        <section class="grid-container">
+        <a href="kladdkaka.html">
+        <article class="start_article">
+            <img class="article_img" src="img/Kladdkaka.jpg">
+            <p class="p_article">Kladdkaka med chokladmaräng</p>
+
+        </article>
+    </a>
+            <a href="rabarberpaj.html">
+                <article class="start_article">
+                    <img class="article_img" src="img/rabarberpaj.jpg">
+                    <p class="p_article">Rabarberpaj</p>
+                </article>
+            </a>
+            <a href="chessecake.html">
+                <article class="start_article">
+                    <img class="article_img" src="img/cheesecake.jpg">
+                    <p class="p_article">Cheesecake</p>
+                </article>
+            </a>
+            <a href="chokladfondant.html">
+                <article class="start_article">
+                    <img class="article_img" src="img/chokladfondant.jpg">
+                    <p class="p_article">Chokladfondant</p>
+
+                </article>
+            </a>
+        </section>
+        </div>
+
+    <button onclick='showhide2()'>Bakverk av Ernst</button>
+
+    <div id="hide2" hidden>
+        <section class="grid-container">
+            <a href="sagotarta.html">
+                <article class="start_article">
+                    <img class="article_img" src="img/sagotarta.jpg">
+                    <p class="p_article">Sagotårta på Ernst vis</p>
+
+                </article>
+            </a>
+            <a href="mordegskakor.html">
+                <article class="start_article">
+                    <img class="article_img" src="img/mordegskakor.jpg">
+                    <p class="p_article">Mördegskakor med sylt</p>
+                </article>
+            </a>
+            <a href="stopaforskaka.html">
+                <article class="start_article">
+                    <img class="article_img" src="img/stopaforskaka.jpg">
+                    <p class="p_article">Stöpaforskaka</p>
+
+                </article>
+            </a>
+        </section>
+    </div>
+
+    <button onClick='showhide3()'>Registrering</button>
+    <div id="hide3" class="center" hidden>
+        <form class="form-register" id="register">
+            <h1>Register</h1>
+
+            <label><input type="text" id='name' placeholder="Namn"></label>
+            <label><input type="text" id='email' placeholder="Email"></label>
+            <label><input type="password" id='psw' placeholder="Lösenord"></label>
+
+            <input type="submit" class ="btn-register" id="btn-save" value="register">
+        </form>
+    </div>
+
+    <button onClick='showhide4()'>Logga in</button>
+    <div id="hide4" class="center" hidden>
+
+        <form class="form-register" id="login">
+            <h1>Logga in</h1>
+
+            <p id="answer"></p>
+            <label><input type="text" id='loginEmail' placeholder="Email"></label>
+            <label><input type="password" id='loginPsw' placeholder="Lösenord"></label>
+
+            <input type="submit" class ="btn-register" id="btn-login" value="login">
+        </form>
+    </div>
+
+    <button onclick='showhide5()'>Veckans tips</button>
+    <div id="hide5" class="center" hidden>
+
+       <p id="recepts"></p>
+    </div>
+
+</nav>
+
+<footer>
+
+<a href="https://www.instagram.com/accounts/login/">
+    <div class="center">
+    <img class="socialmedia_img" src="img/instagram.webp">
+    </div>
+</a>
+
+
+</footer>
+
+<script src="js/json.js"></script>
+<script src="js/hide.js"></script>
+<script src="js/register.js"></script>
+<script src="js/login.js"></script>
+
+
+
+</body>
+</html>
